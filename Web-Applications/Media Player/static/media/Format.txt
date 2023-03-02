@@ -1,4 +1,4 @@
 website path is the name of the folder
 start the .mp4 video with m.
 mp4 video must be h.264
-in subs folder, the file format is .vtt
+in subs folder, located at {media}/subs, the file format is .vtt
