@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.media-container {
+    width: 80%;
+    height: 5em;
+    border: 2px solid white;
+    color: antiquewhite;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.remove-underline {
+    text-decoration: none;    
+
+}

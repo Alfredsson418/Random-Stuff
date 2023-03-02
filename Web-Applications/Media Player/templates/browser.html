@@ -1,0 +1,10 @@
+{% extends "temp.html" %}
+{% block content %}
+    {% for media in lib %}
+        <a href={{ url_for('mediaPlayer', movTitle=media.title) }} class="remove-underline">
+            <div class="media-container">
+                <p>{{ media.title }}</p>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock content %}

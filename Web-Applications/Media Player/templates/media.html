@@ -1,0 +1,10 @@
+{% extends "temp.html" %}
+{% block content %}
+    <video class="video-player" id="currentMedia" width="720" controls>
+        <source src="{{ url_for('static', filename=media.mediaPath) }}" type="video/mp4">
+
+        {% for subs in media.subs %}
+            <track label="{{ subs.subName }}" kind="subtitles" src="{{ url_for('static', filename=subs.staticPath) }}"/>
+        {% endfor %}
+    </video>
+{% endblock content %}
